@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar" />
+
+    <android.support.v4.widget.DrawerLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--The main content view-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/btn_next_activity"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:textSize="8sp"
+                android:text="Go To Next Activity"
+                android:visibility="gone"/>
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/btn_custom_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:textSize="8sp"
+                android:text="常用的Dialog"
+                android:visibility="gone"/>
+
+
+            <com.gc.materialdesign.views.ButtonRectangle
+                android:id="@+id/btn_library_dialog"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="?attr/colorPrimary"
+                android:textSize="8sp"
+                android:text="MaterialDesignLibrary的Dialog"
+                android:visibility="gone"/>
+
+
+
+        </LinearLayout>
+        <!-- The navigation drawer -->
+        <LinearLayout
+            android:id="@+id/left_drawer"
+            android:orientation="vertical"
+            android:layout_gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ListView android:id="@+id/left_drawer_listview"
+                android:layout_width="@dimen/drawer_width"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:choiceMode="singleChoice"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="0dp"
+                android:background="?attr/colorPrimary"/>
+            <Button
+                android:text="@string/edit"
+                android:id="@+id/edit_note_type"
+                android:background="?attr/colorPrimary"
+                android:layout_width="@dimen/drawer_width"
+                android:textColor="@android:color/white"
+                android:layout_height="?attr/listPreferredItemHeight"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </LinearLayout>
+
+    </android.support.v4.widget.DrawerLayout>
+
+
+</LinearLayout>

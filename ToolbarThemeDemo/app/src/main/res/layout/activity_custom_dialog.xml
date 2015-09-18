@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_toolbar" />
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/btn_custom_aletdialog1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:text="showDialog"
+        android:textSize="8sp" />
+
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/btn_custom_aletdialog2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:text="showListDialog"
+        android:textSize="8sp" />
+
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/btn_custom_aletdialog3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:text="showSingleDialog"
+        android:textSize="8sp" />
+
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/btn_custom_aletdialog4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:text="showMultiDialog"
+        android:textSize="8sp" />
+
+    <com.gc.materialdesign.views.ButtonRectangle
+        android:id="@+id/btn_custom_aletdialog5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:text="showCustomDialog"
+        android:textSize="8sp" />
+
+</LinearLayout>

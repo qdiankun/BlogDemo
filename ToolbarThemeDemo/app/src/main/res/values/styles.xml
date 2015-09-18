@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="MyAppTheme"></style>
+
+    <style name="MyAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- 状态栏颜色 -->
+        <item name="colorPrimary">@color/primaryColor</item>
+        <!-- toolbar背景色 -->
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <!-- 控件颜色 -->
+        <item name="colorAccent">@color/accentColor</item>
+    </style>
+
+    <!-- 竖直三点 弹出框文字颜色 -->
+    <style name="MyPopupTheme" parent="ThemeOverlay.AppCompat.Light">
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- toolbar theme -->
+    <style name="ToolBarTheme" parent="ThemeOverlay.AppCompat.Light">
+        <!-- toolbar 标题颜色 -->
+        <item name="android:textColorPrimary">@color/white</item>
+        <!-- 左边横三条线 与 右边竖直三点颜色 -->
+        <item name="colorControlNormal">@color/white</item>
+    </style>
+
+
+    <!-- other color themes -->
+
+    <style name="AppBaseTheme.Light" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/primaryColorDark</item>
+        <item name="colorAccent">@color/accentColor</item>
+        <item name="popupTheme">@style/MyPopupTheme</item>
+        <item name="popupMenuStyle">@style/popupMenuStyle</item>
+        <!--增加视图的Padding值让你的布局恢复正常大小，并且可以把背景扩大 -->
+        <item name="android:fitsSystemWindows">true</item>
+        <item name="windowActionBar">false</item>
+        <!-- 没标题 -->
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorPrimary">@color/text_color_primary</item>
+        <item name="android:textColorSecondary">@color/text_second_color_primary</item>
+        <item name="android:windowBackground">@color/window_background</item>
+        <!-- 搜索框样式 -->
+        <item name="searchViewStyle">@style/SearchViewStyle</item>
+        <item name="android:autoCompleteTextViewStyle">@style/AutoCompleteTextView</item>
+
+        <item name="android:activatedBackgroundIndicator">@drawable/activated_background</item>
+        <item name="selectableItemBackground">@drawable/selectable_background</item>
+    </style>
+
+    <style name="popupMenuStyle" parent="Base.Widget.AppCompat.PopupMenu.Overflow">
+    </style>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="queryBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="AutoCompleteTextView" parent="Widget.AppCompat.AutoCompleteTextView">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColorHint">@android:color/white</item>
+    </style>
+
+
+    <style name="BaseDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:textColorPrimary">@color/text_color_primary</item>
+        <item name="android:textColorSecondary">@color/text_second_color_primary</item>
+        <item name="android:windowEnterAnimation">@anim/abc_popup_enter</item>
+        <item name="android:windowExitAnimation">@anim/abc_popup_exit</item>
+    </style>
+
+
+    <style name="BrownTheme" parent="AppBaseTheme.Light">
+        <item name="colorPrimary">@color/brown</item>
+        <item name="colorPrimaryDark">@color/dark_brown</item>
+        <item name="colorAccent">@color/accent_brown</item>
+    </style>
+
+
+    <style name="BrownDialogTheme" parent="BaseDialogTheme">
+        <item name="colorPrimary">@color/brown</item>
+        <item name="colorPrimaryDark">@color/dark_brown</item>
+        <item name="colorAccent">@color/accent_brown</item>
+    </style>
+
+
+    <style name="BlueTheme" parent="AppBaseTheme.Light">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/dark_blue</item>
+        <item name="colorAccent">@color/accent_blue</item>
+    </style>
+
+    <style name="BlueDialogTheme" parent="BaseDialogTheme">
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryDark">@color/dark_blue</item>
+        <item name="colorAccent">@color/accent_blue</item>
+    </style>
+
+    <style name="BlueGreyTheme" parent="AppBaseTheme.Light">
+        <item name="colorPrimary">@color/blue_grey</item>
+        <item name="colorPrimaryDark">@color/dark_blue_grey</item>
+        <item name="colorAccent">@color/accent_blue_grey</item>
+    </style>
+
+
+    <style name="BlueGreyDialogTheme" parent="BaseDialogTheme">
+        <item name="colorPrimary">@color/blue_grey</item>
+        <item name="colorPrimaryDark">@color/dark_blue_grey</item>
+        <item name="colorAccent">@color/accent_blue_grey</item>
+    </style>
+
+
+    <style name="RedTheme" parent="AppBaseTheme.Light">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/dark_red</item>
+        <item name="colorAccent">@color/accent_red</item>
+    </style>
+
+    <style name="RedDialogTheme" parent="BaseDialogTheme">
+        <item name="colorPrimary">@color/red</item>
+        <item name="colorPrimaryDark">@color/dark_red</item>
+        <item name="colorAccent">@color/accent_red</item>
+    </style>
+
+
+    <style name="YellowTheme" parent="AppBaseTheme.Light">
+        <item name="colorPrimary">@color/yellow</item>
+        <item name="colorPrimaryDark">@color/dark_yellow</item>
+        <item name="colorAccent">@color/accent_yellow</item>
+    </style>
+
+    <style name="YellowDialogTheme" parent="BaseDialogTheme">
+        <item name="colorPrimary">@color/yellow</item>
+        <item name="colorPrimaryDark">@color/dark_yellow</item>
+        <item name="colorAccent">@color/accent_yellow</item>
+    </style>
+
+
+    <style name="DeepPurpleTheme" parent="AppBaseTheme.Light">
+        <item name="colorPrimary">@color/deep_purple</item>
+        <item name="colorPrimaryDark">@color/dark_deep_purple</item>
+        <item name="colorAccent">@color/accent_deep_purple</item>
+    </style>
+
+    <style name="DeepPurpleDialogTheme" parent="BaseDialogTheme">
+        <item name="colorPrimary">@color/deep_purple</item>
+        <item name="colorPrimaryDark">@color/dark_deep_purple</item>
+        <item name="colorAccent">@color/accent_deep_purple</item>
+    </style>
+
+
+    <style name="PinkTheme" parent="AppBaseTheme.Light">
+        <item name="colorPrimary">@color/pink</item>
+        <item name="colorPrimaryDark">@color/dark_pink</item>
+        <item name="colorAccent">@color/accent_pink</item>
+    </style>
+
+    <style name="PinkDialogTheme" parent="BaseDialogTheme">
+        <item name="colorPrimary">@color/pink</item>
+        <item name="colorPrimaryDark">@color/dark_pink</item>
+        <item name="colorAccent">@color/accent_pink</item>
+    </style>
+
+
+    <style name="GreenTheme" parent="AppBaseTheme.Light">
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/dark_green</item>
+        <item name="colorAccent">@color/accent_green</item>
+    </style>
+
+    <style name="GreenDialogTheme" parent="BaseDialogTheme">
+        <item name="colorPrimary">@color/green</item>
+        <item name="colorPrimaryDark">@color/dark_green</item>
+        <item name="colorAccent">@color/accent_green</item>
+    </style>
+
+
+</resources>
